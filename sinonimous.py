@@ -11,6 +11,8 @@ soup = BeautifulSoup(page.text, "html.parser")
 
 raw_sinon = soup.find_all(class_="s-wrapper")
 
+print(f"Sinônimo de {target_word}")
+
 for index in raw_sinon:
     sinon = index.text.split(":")
     sinon = sinon[0] + ":\n" + sinon[1] + "\n"
