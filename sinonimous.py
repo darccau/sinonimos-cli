@@ -11,7 +11,8 @@ soup = BeautifulSoup(page.text, "html.parser")
 
 raw_sinon = soup.find_all(class_="s-wrapper")
 
-print(f"\n                                    Sinônimo de {target_word}\n")
+print(f"\n                                    Sinônimo de \"{target_word}\"\n")
+
 
 
 for index in raw_sinon:
